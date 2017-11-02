@@ -1,0 +1,30 @@
+PURPOSE:
+AUTHOR:
+
+Database Design:
+
+T - 
+Fields: tId, loc, con, his, len
+Primary Keys: id
+Foreign Keys:
+
+R
+Fields: rId, no, sT, ssT, cT, tId, W_Ba, W_Bi, W_Id,F
+Primary Keys: id
+Foreign Keys: tId
+
+C
+Fields: cId, loc, no, sT, ssT, cT, tId
+Primary Keys: id
+Foreign Keys: rId
+
+
+
+
+Platforms
+NA
+
+
+
+Races Query
+CREATE TABLE `api_db`.`races` ( `raceId` INT(50) NOT NULL AUTO_INCREMENT , `number` INT(50) NOT NULL , `startTime` INT(50) NOT NULL , `suspendTime` INT(50) NOT NULL , `closeTime` INT(50) NOT NULL , `trackId` INT(50) NOT NULL , `otherBid` INT(50) NOT NULL , `favBid` INT(50) NOT NULL , `favWin` INT(50) NOT NULL , `favPlace` INT(50) NOT NULL , `contendors` INT(50) NOT NULL , PRIMARY KEY (`race_Id`)) ENGINE = MyISAM;
